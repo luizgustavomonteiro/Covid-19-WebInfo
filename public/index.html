@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 Info</title>
+    <link rel="stylesheet" href="css/styles.css"> <!--Importa o arquivo de estilo CSS-->
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>COVID-19 Info</h1>
+
+        <!--Formulário para selecionar um país-->
+        <form id="country-form">
+            <label for="country">Selecione um país</label>
+            <select id="country" name="country">
+                <option value="Brazil">Brasil</option>
+                <option value="Canada">Canadá</option>
+                <option value="Australia">Austrália</option>
+            </select>
+
+            <button type="submit">Obter Dados</button> <!--Botão para enviar formulário-->
+        </form>
+
+        <div id="data-container"></div>
+
+        <h1>Variação na Taxa de Óbitos</h1> <!--Contêiner para exibir a diferença na taxa de mortos-->
+
+        <form id="comparison-form">
+            <label for="country1">Selecione o primeiro país:</label>
+            <select id="country1" name="country1"></select>
+
+            <label for="country2">Selecione o segundo país:</label>
+            <select id="country2" name="country2"></select>
+
+            <button type="submit">Comparar</button> <!--Botão para formulário de comparação-->
+        </form>
+
+        <div id="difference-container"></div>
+    </div>
+
+    <!--Rodapé para exibir informações sobre o último acesso à API-Covid-19-->
+    <footer>
+        Último acesso à API-Covid-19:
+        <span id="last-access-info">Carregando...</span>
+    </footer>
+
+    <script src="js/scripts.js"></script> <!--Importa o asrquivo de scripts JavaScript-->
+</body>
+
+
+
+</html>
